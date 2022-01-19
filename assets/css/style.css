@@ -1,0 +1,46 @@
+＊ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* home.htmlここから */
+header {
+  text-align: center;
+}
+.title {
+  background-color: rgb(236, 236, 169);
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+}
+.mode {
+  text-align: center;
+  margin: 40px;
+}
+.main-mode {
+  margin: 30px;
+}
+.practice-mode {
+  margin: 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+/* menuここから */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-item {
+  background-color: skyblue;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+}
