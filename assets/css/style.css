@@ -1,6 +1,6 @@
 ＊ {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 10px;
   box-sizing: border-box;
   position: relative;
 }
@@ -12,7 +12,8 @@ header {
 .title {
   background-color: rgb(236, 236, 169);
   margin: 0 auto;
-  border-radius: 8px;
+  font-size: 28px;
+  border-radius: 15px;
   width: 50%;
   text-align: center;
 }
@@ -20,11 +21,12 @@ header {
   text-align: center;
   margin: 40px;
 }
+
 .main-mode {
   margin: 30px;
 }
 .practice-mode {
-  margin: 30px;
+  margin: 50px;
 }
 
 footer {
