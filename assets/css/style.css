@@ -1,48 +1,77 @@
-＊ {
+* {
   margin: 0 auto;
-  padding: 0 10px;
   box-sizing: border-box;
-  position: relative;
-}
-
-/* home.htmlここから */
-header {
   text-align: center;
 }
-.title {
-  background-color: rgb(236, 236, 169);
-  margin: 0 auto;
-  font-size: 28px;
-  border-radius: 15px;
-  width: 50%;
-  text-align: center;
-}
-.mode {
-  text-align: center;
-  margin: 40px;
-}
 
-.main-mode {
-  margin: 30px;
+/* 共通項目 */
+.header-container {
+  padding: 20px 0;
 }
-.practice-mode {
-  margin: 50px;
+.main-container {
+  padding: 20px 0;
 }
-
+.main-contents {
+  padding: 20px;
+}
+.main-footer {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.main-footer ul {
+  display: flex;
+}
 footer {
-  text-align: center;
+  border-top: olive solid 1px;
+  padding: 10px;
 }
 
 /* menuここから */
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .menu-item {
+  margin: 8px auto;
+  padding: 8px 0;
+  width: 240px;
+  background-color: lightblue;
+}
+
+/* QA画面ここから */
+.question {
+  padding: 10px 0;
+  margin: 10px auto;
   background-color: skyblue;
-  text-align: center;
+  width: 70%;
+}
+.answer {
+  padding: 10px 0;
+  margin: 10px auto;
+  background-color: rgb(146, 223, 146);
+  width: 70%;
+}
+.answer .text-area {
+  height: 160px;
+}
+
+.answer .choice li {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+/* 結果画面ここから */
+.result {
+  width: 70%;
+  line-height: 50px;
+  padding: 8px 0;
+  border: orange solid 1px;
+}
+.result-comment {
+  width: 70%;
+  height: 240px;
   padding: 10px;
-  margin: 10px;
-  width: 20%;
+  margin-top: 30px;
+  border: green solid 1px;
 }
