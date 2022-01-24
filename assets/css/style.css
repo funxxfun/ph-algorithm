@@ -9,14 +9,13 @@
   padding: 20px 0;
 }
 .main-container {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .main-contents {
-  padding: 20px;
+  padding: 10px;
 }
 .main-footer {
-  margin: 20px 0;
-  padding: 20px 0;
+  padding-bottom: 10px 0;
 }
 li {
   list-style: none;
@@ -44,22 +43,45 @@ footer {
 .question {
   padding: 10px 0;
   margin: 10px auto;
-  background-color: skyblue;
-  width: 70%;
+  border: solid 1px blue;
+  width: 50%;
 }
 .answer {
-  padding: 10px 0;
-  margin: 10px auto;
-  background-color: rgb(146, 223, 146);
-  width: 70%;
+  margin: 30px auto;
+  width: 50%;
+}
+.yes-no button {
+  margin: 0 20px;
+  font-size: 20px;
+}
+.yes {
+  background-color: green;
+  color: white;
+}
+.no {
+  background-color: orange;
+  color: white;
 }
 .answer .text-area {
   height: 160px;
+  background-color: rgb(146, 223, 146);
+  border: gray 1px solid;
+}
+.answer .choice li {
+  width: 70%;
+  background-color: rgb(80, 180, 219);
+}
+.answer .choice li a {
+  text-decoration: none;
+  color: white;
 }
 
-.answer .choice li {
-  background-color: rgba(255, 255, 255, 0.884);
+.suspect-comment {
+  height: 160px;
+  background-color: rgb(245, 245, 102);
+  border: gray 1px solid;
 }
+
 
 /* 結果画面ここから */
 .result {
