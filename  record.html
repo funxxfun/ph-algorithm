@@ -4,25 +4,13 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>薬剤師のための診療アルゴリズム</title>
-        <script>
-            function alertFunction1(){
-                alert("本当に終了しますか？");
-            }
-        </script>
-        <link rel="stylesheet" href="../assets/css/style.css">
+        <title>記録画面</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">title</h1>
-                <!-- <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav> -->
+                <h1>内容を記録しますか？</h1>
             </header>
         </div>
 
@@ -30,18 +18,16 @@
             <div class="main wrapper clearfix">
                 <div class="main-contents">
                     <section>
-                        <h1>contents section h1</h1>
-                        <p>p1</p>
+                      <!-- 「はい」未実装 -->
+                        <input type="button" value="はい" onclick="location.href='#'" style="width:50%; height:50px;" color="#993333" class="disabled">
                     </section>
                     <section>
-                        <h1>contents section h1</h1>
-                        <p>p2</p>
+                        <input type="button" value="いいえ(トップページへ戻る)" onclick="location.href='index.html'" style="width:50%; height:50px;" color="#993333">
                     </section>
                 </div>
                 <div class="main-footer">
                     <ul>
                         <li><a href="javascript:history.back()">戻る</a></li>
-                        <li><button onclick="alertFunction1(), location.href='../index.html'">終了</button></li>
                     </ul>
                 </div>
             </div> <!-- #main -->

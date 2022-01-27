@@ -4,44 +4,34 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>薬剤師のための診療アルゴリズム</title>
-        <script>
-            function alertFunction1(){
-                alert("本当に終了しますか？");
-            }
-        </script>
+        <title>トリアージ画面</title>
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">title</h1>
-                <!-- <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav> -->
+                <h1 class="title">患者様への対応</h1>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
-                    <section>
-                        <h1>contents section h1</h1>
-                        <p>p1</p>
-                    </section>
-                    <section>
-                        <h1>contents section h1</h1>
-                        <p>p2</p>
+                    <section class="triage">
+                        <div class="recommendation">
+                            <div class="title">
+                                <h2>受診勧奨</h2>
+                            </div>
+                            <div class="comment">
+                                <p><strong>なるべく早く受診してください。</strong></p>
+                                <p>かかりつけ医を確認、<br>もしくは該当する診療科をご案内ください。</p>
+                            </div>
+                        </div>
                     </section>
                 </div>
                 <div class="main-footer">
                     <ul>
                         <li><a href="javascript:history.back()">戻る</a></li>
-                        <li><button onclick="alertFunction1(), location.href='../index.html'">終了</button></li>
+                        <li><a href="../ record.html">終了</a></li>
                     </ul>
                 </div>
             </div> <!-- #main -->

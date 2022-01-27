@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>menu</title>
+        <script>
+            function alertFunction1(){
+                alert("本当に終了しますか？");
+            }
+        </script>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
@@ -16,25 +21,25 @@
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
-                  <ul class="menu">
-                    <li class="menu-item"><a href="./headache/headache_qa0.html">頭痛</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">発疹</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">浮腫</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">発熱</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">嚥下困難・障害</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">腹痛</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">下痢・便秘</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">動悸・心悸亢進</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">咳・痰・呼吸困難</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">記憶障害</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">めまい</a></li>
-                    <li class="menu-item"><a href="#" disable="disabled">腰痛</a></li>
-                  </ul>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="./headache/headache_qa0.html">頭痛</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">発疹</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">浮腫</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">発熱</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">嚥下困難・障害</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">腹痛</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">下痢・便秘</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">動悸・心悸亢進</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">咳・痰・呼吸困難</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">記憶障害</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">めまい</a></li>
+                        <li class="menu-item"><a href="#" class="disabled">腰痛</a></li>
+                      </ul>
                 </div>
                 <div class="main-footer">
                     <ul>
                         <li><a href="javascript:history.back()">戻る</a></li>
-                        <li><a href="index.html">終了</a></li>
+                        <li><button onclick="alertFunction1(), location.href='index.html'">終了</button></li>
                     </ul>
                 </div>
             </div> <!-- #main -->

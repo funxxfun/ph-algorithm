@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>薬剤師のための診療アルゴリズム</title>
+        <title>疑い疾患画面</title>
         <script>
             function alertFunction1(){
                 alert("本当に終了しますか？");
@@ -15,27 +15,30 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">title</h1>
-                <!-- <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav> -->
+                <h1 class="title">疑われる疾患</h1>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
-                    <section>
-                        <h1>contents section h1</h1>
-                        <p>p1</p>
+                    <section class="question">
+                        <p>下記に当てはまる症状はありますか？</p>
                     </section>
-                    <section>
-                        <h1>contents section h1</h1>
-                        <p>p2</p>
+                    <section class="answer">
+                        <div class="suspect">
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>くも膜下出血</h3>
+                                    <a href="../template/emergency.html">激痛、嘔吐、項部硬直</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>脳内出血</h3>
+                                    <a href="../template/emergency.html">片麻痺、失語、失調、めまい</a>
+                                </li>
+                            </div>
+                        </div>
                     </section>
                 </div>
                 <div class="main-footer">
@@ -49,7 +52,7 @@
 
         <div class="footer-container">
             <footer class="wrapper">
-                <p>©️ph-algo 2022</p>
+                <p>©︎ph-algo 2022</p>
             </footer>
         </div>
     </body>

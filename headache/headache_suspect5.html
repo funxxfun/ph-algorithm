@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>QA画面</title>
+        <title>疑い疾患画面</title>
         <script>
             function alertFunction1(){
                 alert("本当に終了しますか？");
@@ -15,20 +15,35 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">発熱の有無</h1>
+                <h1 class="title">疑われる疾患</h1>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
                     <section class="question">
-                        <p>熱はありますか？</p>
+                        <p>下記に当てはまる症状はありますか？</p>
                     </section>
                     <section class="answer">
-                        <div class="yes-no">
-                            <button type="button" class="yes" onclick="location.href='headache_qa5.html'" value="yes">はい</button>
-                            <button type="button" class="no" onclick="location.href='headache_suspect4.html'" value="no">いいえ</button>
+                        <div class="suspect">
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>脳腫瘍</h3>
+                                    <a href="headache_recommendation1.html">早朝に悪化、嘔吐、片麻痺、失語、けいれん</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>側頭動脈炎</h3>
+                                    <a href="../template/emergency.html">側頭部、拍動性、圧痛、全身症状(関節痛など)</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>慢性硬膜下血腫</h3>
+                                    <a href="../template/recommendation.html">鈍痛、見当識低下、記銘力低下、外傷の既往</a>
+                                </li>
+                            </div>
                         </div>
                     </section>
                 </div>

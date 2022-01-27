@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>QA画面</title>
+        <title>疑い疾患画面</title>
         <script>
             function alertFunction1(){
                 alert("本当に終了しますか？");
@@ -15,20 +15,31 @@
     <body>
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">発熱の有無</h1>
+                <h1 class="title">疑われる疾患</h1>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
                     <section class="question">
-                        <p>熱はありますか？</p>
+                        <p>下記に当てはまる症状はありますか？</p>
                     </section>
                     <section class="answer">
-                        <div class="yes-no">
-                            <button type="button" class="yes" onclick="location.href='headache_qa5.html'" value="yes">はい</button>
-                            <button type="button" class="no" onclick="location.href='headache_suspect4.html'" value="no">いいえ</button>
+                        <div class="suspect">
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>うつ病</h3>
+                                    <a href="../template/recommendation.html">頭重感、不眠などの不定愁訴、抑うつ・不安</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>緊張型頭痛</h3>
+                                    <h4>締め付け、肩こり、午後に悪化、運動で軽減</h4>
+                                    <button type="button" class="yes" onclick="location.href='headache_consultation1.html'">軽〜中度</button>
+                                    <button type="button" class="yes" onclick="location.href='../template/recommendation.html'">高度</button>
+                                </li>
+                            </div>
                         </div>
                     </section>
                 </div>

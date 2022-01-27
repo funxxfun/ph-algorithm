@@ -38,6 +38,10 @@ footer {
   width: 240px;
   background-color: lightblue;
 }
+.menu-item a.disabled {
+  pointer-events: none;
+  color: #000;
+}
 
 /* QA画面ここから */
 .question {
@@ -75,25 +79,71 @@ footer {
   text-decoration: none;
   color: white;
 }
-
-.suspect-comment {
-  height: 160px;
+.answer .comment {
+  padding: 16px 0;
   background-color: rgb(245, 245, 102);
   border: gray 1px solid;
 }
-
-
-/* 結果画面ここから */
-.result {
-  width: 70%;
-  line-height: 50px;
+/* 疑い疾患画面ここから */
+.answer .suspect-disease {
+  display: flex;
+  margin: 8px 0;
   padding: 8px 0;
-  border: orange solid 1px;
+  background-color: rgb(233, 199, 199);
 }
-.result-comment {
+.suspect-disease button {
+  background-color: #668ad8;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.suspect-disease button:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* トリアージ画面ここから */
+.triage .title {
   width: 70%;
-  height: 240px;
+  padding: 8px 0;
+  margin: 16px auto;
+  font-size: 24px;
+}
+.triage .comment {
+  width: 70%;
   padding: 10px;
   margin-top: 30px;
-  border: green solid 1px;
+  font-size: 20px;
+}
+.triage .comment p {
+  margin: 10px 0;
+}
+.emergency .title {
+  background-color: red;
+  color: white;
+}
+.emergency .comment {
+  border: red double ;
+}
+.recommendation .title {
+  border: solid 5px orange;
+  color: orange;
+}
+.recommendation .comment {
+  border: orange double ;
+}
+.consultation .title {
+  border: solid 1px green;
+}
+.consultation .comment {
+  border: green double ;
+  font-size: 18px;
+}
+.medicine {
+  margin: 16px 0;
+}
+.medicine-list {
+  border-bottom: 1px solid #000;
+  text-align: left;
 }

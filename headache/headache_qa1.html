@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>QA画面</title>
+        <script>
+            function alertFunction1(){
+                alert("本当に終了しますか？");
+            }
+        </script>
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
@@ -15,7 +20,6 @@
                 </h1>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div class="main-contents">
@@ -24,13 +28,13 @@
                     </section>
                     <section class="answer">
                         <div class="yes-no">
-                            <button type="button" class="yes" onclick="location.href='#'" value="yes">はい</button>
-                            <button type="button" class="no" onclick="location.href='#'" value="no">いいえ</button>
+                            <button type="button" class="yes" onclick="location.href='../template/emergency.html'" value="yes">はい</button>
+                            <button type="button" class="no" onclick="location.href='../template/recommendation.html'" value="no">いいえ</button>
                         </div>
                     </section>
                     <section class="answer">
-                        <div class="suspect-comment">
-                            <h3 class="suspect-disease">[考えられる疾患]</h3>
+                        <div class="comment">
+                            <h3>[頭部外傷の確認]</h3>
                             <p>
                                 切創、皮下血腫、骨折、<br>
                                 急性硬膜下血腫、<br>
@@ -43,7 +47,7 @@
                 <div class="main-footer">
                     <ul>
                         <li><a href="javascript:history.back()">戻る</a></li>
-                        <li><a href="../index.html">終了</a></li>
+                        <li><button onclick="alertFunction1(), location.href='../index.html'">終了</button></li>
                     </ul>
                 </div>
             </div> <!-- #main -->

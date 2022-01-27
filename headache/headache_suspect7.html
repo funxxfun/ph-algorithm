@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>疑い疾患画面</title>
+        <script>
+            function alertFunction1(){
+                alert("本当に終了しますか？");
+            }
+        </script>
+        <link rel="stylesheet" href="../assets/css/style.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">疑われる疾患</h1>
+            </header>
+        </div>
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <div class="main-contents">
+                    <section class="question">
+                        <p>下記に当てはまる症状はありますか？</p>
+                    </section>
+                    <section class="answer">
+                        <div class="suspect">
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>緊張型頭痛</h3>
+                                    <h4>締め付け、肩こり、午後に悪化、運動で軽減</h4>
+                                    <button type="button" class="yes" onclick="location.href='headache_consultation1.html'">軽〜中度</button>
+                                    <button type="button" class="yes" onclick="location.href='../template/recommendation.html'">高度</button>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>片頭痛</h3>
+                                    <h4>拍動性、主に片側性、吐気、<br>光・音に敏感、前兆</h4>
+                                    <button type="button" class="yes" onclick="location.href='headache_consultation1.html'">軽〜中度</button>
+                                    <button type="button" class="yes" onclick="location.href='../template/recommendation.html'">高度</button>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>群発頭痛</h3>
+                                    <a href="../template/recommendation.html">拍動性、眼窩部の激痛、流涙、鼻閉</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>薬物乱用頭痛</h3>
+                                    <a href="headache_recommendation2.html">15日／月以上の頭痛<br>３ヶ月以上の薬物乱用</a>
+                                </li>
+                            </div>
+                            <div class="suspect-disease">
+                                <li class="disease-list">
+                                    <h3>三叉神経痛</h3>
+                                    <a href="../template/recommendation.html">一側顔面部、針で刺すような痛み、<br>顔面・口腔内刺激で誘発</a>
+                                </li>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="main-footer">
+                    <ul>
+                        <li><a href="javascript:history.back()">戻る</a></li>
+                        <li><button onclick="alertFunction1(), location.href='../index.html'">終了</button></li>
+                    </ul>
+                </div>
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <p>©︎ph-algo 2022</p>
+            </footer>
+        </div>
+    </body>
+</html>
